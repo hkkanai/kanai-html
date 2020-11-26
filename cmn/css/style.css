@@ -1,0 +1,273 @@
+@charset "utf-8";
+@import url(https://fonts.googleapis.com/earlyaccess/notosansjapanese.css);
+
+
+.container {
+  max-width: 1160px;
+  padding: 0 40px;
+  margin: 0 auto;
+}
+
+
+/* ヘッダー */
+header {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+header > .container {
+  height: 100px;
+  display: flex;
+  align-items: center;
+  max-width: none;
+  padding: 0 60px;
+}
+
+
+
+
+/* ヘッダーナビ */
+.nav_header {
+  margin: 0 0 0 auto;  
+}
+.list_nav_header {
+  display: flex;
+  align-items: center;
+  margin: 0 -15px;
+}
+.list_nav_header > li {
+  padding: 0 15px;
+}
+.list_nav_header a {
+  color: #fff;
+  font: 400 18px/1em 'futura PT', 'noto sans japanese',sans-serif;
+}
+[class*="btn_ico"] {
+  color: #fff;
+  font: 400 18px/1em 'futura PT', 'noto sans japanese',sans-serif;
+  display: flex;
+  align-items: center;
+  height: 36px;
+  padding: 0 30px 0 60px;
+  background: #0cf;
+  box-shadow: 0px 7px 6px -4px rgba(16,61,72,.2);
+  position: relative;
+}
+[class*="btn_ico"]:before {
+  content: "";
+  display: block;
+  width: 30px;
+  height: 30px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+  position: absolute;
+  top: 50%;
+  left: 15px;
+  transform: translateY(-50%);
+}
+[class*="btn_ico"][class*="mail"]:before {
+  background: url(../img/ico/ico_mail.svg);
+}
+
+
+
+
+/* トップビュー */
+.area_top_view {
+  background: url(../img/bg/bg_view.jpg) no-repeat bottom center;
+  background-size: cover;
+}
+.area_top_view > .container {
+  height: 700px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.area_top_view img {
+  height: 60px;
+  vertical-align: bottom;
+}
+.area_top_view .ttl {
+  color: #fff;
+
+  font: 400 50px/1em 'futura PT', 'noto sans japanese',sans-serif;
+  letter-spacing: .04em;
+  margin: 20px 0 0;
+  padding: 0 0 0 40px;
+  position: relative;
+
+}
+
+
+/* エリア_ホーム */
+[class*="area_home"] {
+  padding: 80px 0 120px;
+}
+
+/* ヘッド */
+.head_home {
+  margin: 0 0 100px;
+  display: flex;
+  justify-content: center;
+}
+.head_home .ttl {
+  font: 500 56px/1em 'futura PT','noto sans japanese',sans-serif;
+  padding: 0 0 12px;
+  position: relative;
+}
+.head_home .ttl:after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 5px;
+  background: #0cf;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+/* 2分割レイアウト */
+.layout_2_div {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 0 -50px;
+}
+.layout_2_div > div {
+  width: 50%;
+  padding: 0 40px;
+}
+
+/* 自己紹介文 */
+.text_home .ttl {
+  font: 500 32px/1em 'futura PT','noto sans japanese',sans-serif;
+  margin: 0 0 20px;
+}
+.text_home .description {
+  font: 300 20px/1.8em 'futura PT','noto sans japanese',sans-serif;
+}
+
+
+
+/* バックグラウンド */
+.bg_black {
+  color: #fff;
+  background: rgb(10, 48, 70);
+}
+
+
+
+
+
+/* 学習内容 */
+.list_feature {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -20px;
+}
+.list_feature > li {
+  width: 33%;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.list_feature .ttl {
+  font: 500 40px/1em 'futura PT','noto sans japanese',sans-serif;
+  margin: 0 0 30px;
+}
+.list_feature .description {
+  font: 200 20px/2em 'noto sans japanese',sans-serif;
+}
+
+
+
+
+/* フッター */
+footer > .container {
+  padding: 0 0 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* snsリスト */
+.list_sns {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 0 -10px;
+}
+.list_sns > li {
+  padding: 30px 40px;
+}
+.list_sns a {
+  display: block;
+  width: 40px;
+  height: 40px;
+  background: #000;
+  border-radius: 50%;
+  position: relative;
+}
+.list_sns a:before {
+  content: "";
+  display: block;
+  width: 30px;
+  height: 30px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50% , -50%);
+}
+.list_sns .youtube a:before {
+  background: url(../img/ico/ico_sns_youtube.svg);
+}
+.list_sns .instagram a:before {
+  background: url(../img/ico/ico_sns_instagram.svg);
+}
+.list_sns .facebook a:before {
+  background: url(../img/ico/ico_sns_facebook.svg);
+}
+
+
+.copyright {
+  font: 300 14px/1em 'futura PT','noto sans japanese',sans-serif;
+  margin: 30px 0 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
